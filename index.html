@@ -1,31 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="autoTranslate.js"></script>
-    <script>
-      // Auto-detect user language and translate
-      AutoTranslate.init({
-        targetLanguage: 'auto', // 'auto' detects the user's browser language
-        sourceLanguage: 'en', // Your site's default language
-      });
-    </script>
-    <title>Earthforce - Give back to the world</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html"></a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover meaningful causes and explore animal adoption in New Zealand.">
+  <title>Earthforce — Good starts here</title>
+  <link rel="stylesheet" href="/theme.css">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Earthforce home"><span class="brand-mark" aria-hidden="true">✳</span> earthforce</a>
+      <div class="nav-links">
+        <a href="#causes">Causes</a>
+        <a href="#adoption">NZ adoption</a>
+        <a class="nav-cta" href="#causes">Explore causes <span aria-hidden="true">↗</span></a>
+      </div>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A little good goes a long way</p>
+        <h1 id="hero-title">A better world starts <em>with us.</em></h1>
+        <p>Find causes that matter to you and discover ways to make a difference, close to home and beyond.</p>
+        <div class="hero-actions">
+          <a class="button-primary" href="#causes">Explore causes <span aria-hidden="true">↗</span></a>
+          <a class="button-outline" href="#adoption">Adopt a pet <span aria-hidden="true">♡</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✳</span> Small acts. A little more hope. A lot of good.</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="earth">🌏</div>
+        <div class="float-card float-card-top"><span class="float-icon">✿</span><span>For our planet<br><small>Every action counts</small></span></div>
+        <div class="float-card float-card-bottom"><span class="float-icon">♡</span><span>For every life<br><small>A little care goes far</small></span></div>
+      </div>
+    </section>
+
+    <section class="section causes-section" id="causes" aria-labelledby="causes-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Find your cause</p>
+          <h2 id="causes-heading">Good starts here.</h2>
+          <p>There are so many ways to make a difference. Find the one that feels right for you.</p>
+        </div>
+        <span class="section-number">01 / EXPLORE</span>
+      </div>
+      <div class="cause-grid">
+        <article class="cause-card project-card">
+          <div class="card-top"><span class="card-icon" aria-hidden="true">✳</span><span class="card-label">PROJECTS</span></div>
+          <h3>Support a cause</h3>
+          <p>Discover projects doing good and find out how you can help them grow.</p>
+          <a class="text-link" href="#project">Explore project details <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="cause-card adoption-card" data-nz-recommendation>
+          <div class="card-top"><span class="card-icon" aria-hidden="true">♡</span><span class="card-label">NEW ZEALAND</span></div>
+          <h3>Give a pet a home</h3>
+          <p>Explore adoption listings and find a companion who might be closer than you think.</p>
+          <a class="text-link" href="#adoption">Explore NZ adoption <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <div class="location-panel">
+        <div><span class="location-kicker">A LITTLE CLOSER TO HOME</span>
+          <h3>Find what matters near you.</h3>
+          <p data-location-message role="status">Share your location for a New Zealand adoption recommendation. Your browser will ask first.</p>
+        </div>
+        <button class="button-light" type="button" data-location-button>Use my location <span aria-hidden="true">⌖</span></button>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project" aria-labelledby="project-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Project details</p>
+          <h2 id="project-heading">Make your impact.</h2>
+          <p>Learn more about a project and the ways you can support its work.</p>
+        </div>
+        <span class="section-number">02 / GIVE</span>
+      </div>
+      <div class="project-detail">
+        <div>
+          <span class="detail-label">PROJECT INFORMATION</span>
+          <h3>Project details coming soon.</h3>
+          <p>Details about the project and its impact will appear here once they are available.</p>
+          <!-- Add the verified project name, description and partner details here. -->
+        </div>
+        <div class="giving-box">
+          <span class="detail-label">WAYS TO GIVE</span>
+          <h3>Giving options</h3>
+          <p>Donation links will be added here when available.</p>
+          <!-- Add verified donation links here. -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section adoption-section" id="adoption" aria-labelledby="adoption-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> New Zealand · Animal welfare</p>
+          <h2 id="adoption-heading">A friend could be closer.</h2>
+          <p>Find animals looking for a home at the nearest centre represented in a connected adoption feed.</p>
+        </div>
+        <span class="section-number">03 / ADOPT</span>
+      </div>
+      <div class="adoption-panel">
+        <div class="adoption-intro">
+          <div class="adoption-icon" aria-hidden="true">♡</div>
+          <div>
+            <h3>Find a nearby centre</h3>
+            <p data-spca-location role="status">Location is optional and stays in your browser. You’ll be asked for permission first.</p>
+          </div>
+          <button class="button-outline" type="button" data-spca-location-button>Use my location <span aria-hidden="true">⌖</span></button>
+        </div>
+        <div class="listings-heading">
+          <h3>Animals awaiting adoption</h3><span class="feed-badge" data-feed-status>Feed not connected</span>
+        </div>
+        <p class="feed-message" data-feed-message role="status">Live listings aren’t available yet. An approved adoption feed needs to be connected first.</p>
+        <div class="pet-grid" data-pet-grid aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">✳</span> earthforce</a>
+        <p>For a kinder, greener world.</p>
+      </div>
+      <div class="footer-links"><a href="#causes">Causes</a><a href="#project">Projects</a><a href="#adoption">NZ adoption</a></div>
+      <span class="footer-signoff">A LITTLE GOOD, EVERY DAY ✳</span>
+    </div>
+  </footer>
+</body>
+
 </html>
